@@ -437,11 +437,13 @@ Six machine learning classification models were evaluated for predicting custome
 
 Among all evaluated models, Logistic Regression achieved the best overall performance, with an accuracy of 80.70%, AUC of 0.8416, F1-score of 0.6092, and MCC of 0.4843. These results indicate that Logistic Regression provides the most balanced performance across all evaluation metrics and demonstrates strong capability in distinguishing between churn and non-churn customers.
 
+st.write("""
 The confusion matrix shows that the model correctly classified 925 non-churn customers and 212 churn customers, while making relatively few incorrect predictions. The ROC curve further confirms the model's effectiveness, with an AUC of 0.8416, indicating good discriminative ability between the two classes.
 
 Feature importance analysis revealed that Contract Type, Internet Service Type, Online Security, Tech Support, and Payment Method are among the most influential factors affecting customer churn. Customers with one-year and two-year contracts are significantly less likely to churn, whereas customers using fiber-optic internet service and electronic check payment methods tend to have a higher likelihood of churn.
 
 Overall, Logistic Regression provides the best combination of predictive performance, interpretability, and reliability for this customer churn prediction problem.
+""")
 
 
 # In[ ]:
