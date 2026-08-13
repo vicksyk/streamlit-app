@@ -403,28 +403,28 @@ plt.show()
 # 3. FEATURE IMPORTANCE
 # =====================================
 
-importance = pd.DataFrame({
-    "Feature": X.columns,
-    "Coefficient": log_reg.coef_[0]
-})
+# importance = pd.DataFrame({
+#     "Feature": X.columns,
+#     "Coefficient": log_reg.coef_[0]
+# })
 
-importance["AbsCoefficient"] = abs(
-    importance["Coefficient"]
-)
+# importance["AbsCoefficient"] = abs(
+#     importance["Coefficient"]
+# )
 
-importance = importance.sort_values(
-    by="AbsCoefficient",
-    ascending=False
-)
+# importance = importance.sort_values(
+#     by="AbsCoefficient",
+#     ascending=False
+# )
 
-print("\nTop 15 Important Features:\n")
-print(importance.head(15))
+# print("\nTop 15 Important Features:\n")
+# print(importance.head(15))
 
 
 # In[36]:
 
 
-importance.head(15)
+# importance.head(15)
 
 
 # In[ ]:
