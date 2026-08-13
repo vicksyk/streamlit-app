@@ -431,11 +431,13 @@ importance.head(15)
 # In[ ]:
 
 
-Model Performance Analysis
+# Model Performance Analysis
 
+st.write("""
 Six machine learning classification models were evaluated for predicting customer churn: Logistic Regression, Decision Tree, K-Nearest Neighbors (KNN), Naive Bayes, Random Forest, and Support Vector Machine (SVM). The models were compared using Accuracy, AUC, Precision, Recall, F1-Score, and Matthews Correlation Coefficient (MCC).
 
 Among all evaluated models, Logistic Regression achieved the best overall performance, with an accuracy of 80.70%, AUC of 0.8416, F1-score of 0.6092, and MCC of 0.4843. These results indicate that Logistic Regression provides the most balanced performance across all evaluation metrics and demonstrates strong capability in distinguishing between churn and non-churn customers.
+""")
 
 st.write("""
 The confusion matrix shows that the model correctly classified 925 non-churn customers and 212 churn customers, while making relatively few incorrect predictions. The ROC curve further confirms the model's effectiveness, with an AUC of 0.8416, indicating good discriminative ability between the two classes.
@@ -449,8 +451,9 @@ Overall, Logistic Regression provides the best combination of predictive perform
 # In[ ]:
 
 
-Conclusion
+# Conclusion
 
+st.write("""
 The objective of this project was to develop and evaluate machine learning models for predicting customer churn using the Telco Customer Churn dataset. Data preprocessing steps included handling missing values, encoding categorical variables, feature scaling, and splitting the dataset into training and testing sets.
 
 A total of six classification algorithms were implemented and compared. Based on the evaluation metrics, Logistic Regression emerged as the best-performing model, achieving the highest accuracy, AUC, F1-score, and MCC among all models tested. The model demonstrated strong predictive capability while maintaining a good balance between identifying churned customers and minimizing false predictions.
@@ -458,6 +461,7 @@ A total of six classification algorithms were implemented and compared. Based on
 The analysis also identified several important business factors associated with churn, including contract duration, internet service type, online security services, technical support availability, and payment methods. These insights can help organizations better understand customer behavior and implement targeted retention strategies.
 
 In conclusion, the developed Logistic Regression model is an effective and interpretable solution for customer churn prediction. The findings of this study demonstrate the value of machine learning in supporting data-driven decision-making and improving customer retention efforts.
+""")
 
 
 # In[ ]:
