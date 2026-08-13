@@ -405,7 +405,7 @@ plt.show()
 
 importance = pd.DataFrame({
     "Feature": X.columns,
-    "Coefficient": lr.coef_[0]
+    "Coefficient": log_reg.coef_[0]
 })
 
 importance["AbsCoefficient"] = abs(
