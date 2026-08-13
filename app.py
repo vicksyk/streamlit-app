@@ -340,7 +340,6 @@ results_df
 # In[33]:
 
 
-get_ipython().run_line_magic('whos', '')
 
 
 # In[35]:
