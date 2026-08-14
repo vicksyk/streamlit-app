@@ -50,16 +50,27 @@ from sklearn.metrics import ConfusionMatrixDisplay
 
 st.subheader("Confusion Matrix")
 
-cm = [
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.metrics import ConfusionMatrixDisplay
+
+st.subheader("Confusion Matrix")
+
+cm = np.array([
     [925, 49],
     [223, 212]
-]
+])
 
 fig, ax = plt.subplots(figsize=(5,4))
 
-ConfusionMatrixDisplay(
-    confusion_matrix=cm
-).plot(ax=ax)
+disp = ConfusionMatrixDisplay(
+    confusion_matrix=cm,
+    display_labels=["No Churn", "Churn"]
+)
+
+disp.plot(ax=ax)
+
+st.pyplot(fig)
 
 st.pyplot(fig)
 
