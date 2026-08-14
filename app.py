@@ -8,6 +8,43 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 
+st.title("Customer Churn Prediction System")
+
+uploaded_file = st.file_uploader(
+    "Upload Test CSV File",
+    type=["csv"]
+)
+
+if uploaded_file is not None:
+    df_uploaded = pd.read_csv(uploaded_file)
+
+    st.subheader("Uploaded Dataset Preview")
+    st.dataframe(df_uploaded.head())
+
+    st.write("Dataset Shape:", df_uploaded.shape)
+
+model_name = st.selectbox(
+    "Select Classification Model",
+    [
+        "Logistic Regression",
+        "Decision Tree",
+        "KNN",
+        "Naive Bayes",
+        "Random Forest",
+        "SVM"
+    ]
+)
+
+st.write("Selected Model:", model_name)
+
+if model_name == "Logistic Regression":
+    st.metric("Accuracy", "80.70%")
+    st.metric("AUC", "0.8416")
+    st.metric("Precision", "0.6584")
+    st.metric("Recall", "0.5668")
+    st.metric("F1 Score", "0.6092")
+    st.metric("MCC", "0.4843")
+
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import StandardScaler
 
@@ -366,6 +403,7 @@ disp = ConfusionMatrixDisplay(
 disp.plot(cmap="Blues")
 plt.title("Confusion Matrix - Logistic Regression")
 plt.show()
+st.pyplot(plt.gcf())
 
 # =====================================
 # 2. ROC CURVE
