@@ -33,7 +33,7 @@ The target variable indicates whether a customer discontinued the telecom servic
 ## 3. Repository and Application Links
 
 - **GitHub Repository:** https://github.com/vicksyk/streamlit-app
-- **Live Streamlit Application:** https://app-app-hzck8ncpky3ncw8bwgqjsp.streamlit.app
+- **Live Streamlit Application:** https://app-app-hzck8ncpkv3ncw8bwqgisp.streamlit.app/
 
 ## 4. Models Implemented
 
