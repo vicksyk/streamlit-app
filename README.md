@@ -100,3 +100,11 @@ Logistic Regression achieved the best overall performance, with an Accuracy of 0
 Based on the evaluation results, Logistic Regression was selected as the overall best-performing model for this customer churn classification problem.
 
 ## 10. Repository Contents
+```text
+streamlit-app/
+│
+├── app.py
+├── requirements.txt
+├── README.md
+├── Telco-Customer-Churn.csv
+└── 2025AC05906_ML_Assignment2.ipynb
